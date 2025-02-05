@@ -30,7 +30,7 @@ function createBatchStream(batchSize) {
                 batch = [];
             }
             callback();
-  tou      },
+       },
         flush(callback) {
             if (batch.length > 0) {
                 this.push(JSON.stringify(batch) + "\n");
